@@ -1,0 +1,90 @@
+// strangerpixel bespoke sass
+
+body {
+	background-color: $lightKhaki;
+}
+
+.gray-bg {
+	background-color: $grayDark;
+	color: $white;
+}
+
+.white-bg {
+	background-color: $white;
+}
+
+/*#business-card {
+	background-color: $white;
+	margin: 100px 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid darken($wellBackground, 7%);
+	@include box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+	.thumbnail {
+		background-color: $grayDark;
+	}
+}*/
+
+// Transitions
+$initialColor: #ee4747;
+
+.transition {
+	height: 20px;
+	div {
+		width: 20%;
+		float: left;
+		height: 20px;
+		&.first {
+			background-color: $initialColor;
+		}
+		&.second {
+			background-color: #ee5f47;
+		}
+		&.third {
+			background-color: #ee7647;
+		}
+		&.fourth {
+			background-color: #eead47;
+		}
+		&.fifth {
+			background-color: #eed847;
+		}
+	}
+}
+
+.horizontal {
+	&.padded {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	&.top {
+		margin-top: 60px;
+	}
+}
+
+#business-card {
+	.thumbnail {
+		background-color: $white;
+	}
+}
+
+#author-profile h1 {
+	margin-bottom: 40px;
+}
+
+.social {
+	margin-left: 0;
+	li {
+		margin-bottom: 12px;
+	}
+	a {
+		display: block;
+		background: url(../img/social-sprite.png) 0 -8px no-repeat;
+		height: 32px;
+		padding-left: 40px;
+		padding-top: 6px;
+	}
+	.linkedin a {
+		background-position: 0 -52px;
+	}
+}	
