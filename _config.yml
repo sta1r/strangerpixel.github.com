@@ -1,4 +1,5 @@
 auto: true
-markdown: rdiscount
+url: http://localhost:4000/
 permalink: /:year/:month/:title
+markdown: rdiscount
 rdiscount extensions: [smart]
