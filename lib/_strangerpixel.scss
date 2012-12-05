@@ -29,11 +29,10 @@ body {
 $initialColor: #ee4747;
 
 .transition {
-	height: 20px;
 	div {
 		width: 20%;
 		float: left;
-		height: 20px;
+		height: 10px;
 		&.first {
 			background-color: $initialColor;
 		}
