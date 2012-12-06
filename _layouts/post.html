@@ -38,6 +38,11 @@
 		{% unless page.tags == empty %}
 		<div class="entry-meta">
 			Posted in
+			<ul class="cats">
+				{% assign categories_list = page.categories %}
+    			{% include JB/categories_list %}
+			</ul>
+			and tagged
 			<ul class="tags">
 				{% assign tags_list = page.tags %}
     			{% include JB/tags_list %}
