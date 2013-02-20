@@ -1,6 +1,6 @@
 // strangerpixel bespoke sass
 
-body {
+body, .khaki-bg {
 	background-color: $lightKhaki;
 }
 
@@ -13,17 +13,74 @@ body {
 	background-color: $white;
 }
 
-/*#business-card {
-	background-color: $white;
-	margin: 100px 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border: 1px solid darken($wellBackground, 7%);
-	@include box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
-	.thumbnail {
-		background-color: $grayDark;
+.blue-bg {
+	background-color: $linkColor;
+	color: $white;
+}
+
+// BLOCKS AND STUFF
+.horizontal {
+	&.padded {
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
-}*/
+	&.top {
+		margin-top: 60px;
+	}
+}
+
+.thumb-container {
+	//margin-top: -120px; for that pop-out effect
+	background-color: $linkColor;
+	padding: 20px;
+	width: 220px;
+}
+
+.thumbnail {
+	background-color: $white;
+	border-color: $white;
+}
+
+.social {
+	margin-left: 0;
+	li {
+		margin: 0 12px 0 0;
+		float: left;
+	}
+	a {
+		display: block;
+		background: url(../img/social-sprite.png) 0 -8px no-repeat;
+		height: 32px;
+		padding-left: 40px;
+		padding-top: 6px;
+		color: $grayDark;
+	}
+	.linkedin a {
+		background-position: 0 -52px;
+	}
+	.email a {
+		background-position: 0 -93px;
+	}
+}
+
+// TYPE AND STUFF
+#author-profile h1 {
+	margin-bottom: 25px;
+}
+
+section h2 {
+	font-family: 'CrimsonSemiboldItalic';
+}
+
+section h3 {
+	font-family: 'OpenSansLight';
+}
+
+.border-bottom {
+	border-bottom: 1px solid $grayLighter;
+	margin-bottom: 15px;
+	padding-bottom: 20px;
+}
 
 // Transitions
 $initialColor: #ee4747;
@@ -52,39 +109,4 @@ $initialColor: #ee4747;
 	}
 }
 
-.horizontal {
-	&.padded {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-	&.top {
-		margin-top: 60px;
-	}
-}
-
-#business-card {
-	.thumbnail {
-		background-color: $white;
-	}
-}
-
-#author-profile h1 {
-	margin-bottom: 40px;
-}
-
-.social {
-	margin-left: 0;
-	li {
-		margin-bottom: 12px;
-	}
-	a {
-		display: block;
-		background: url(../img/social-sprite.png) 0 -8px no-repeat;
-		height: 32px;
-		padding-left: 40px;
-		padding-top: 6px;
-	}
-	.linkedin a {
-		background-position: 0 -52px;
-	}
-}	
+	
