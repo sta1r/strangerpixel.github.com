@@ -1,10 +1,55 @@
----
-layout: layout
----
+<!DOCTYPE HTML>
 
-<div class="content">
-  <div id="post">
-    <h1>{{ post.title }}</h1>
-    {{ content }}
-  </div>
-</div>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Alastair Mucklow" />
+	<title>{{ page.title }}</title>
+
+	<link rel="stylesheet" href="{{ site.url }}css/style.css" />  
+</head>
+<body>
+	<div id="container" class="clear-self"> 
+		<header class="post-header">
+			<div id="logo_block" class="block">
+				<h4><a href="http://www.strangerpixel.com/" title="Back to home page" rel="home">strangerpixel</a></h4>	
+			</div>
+			<p class="description">I make websites.</p>
+			<div id="bio_block" class="block">
+				<div class="biz-card-image">
+					<img class="biopic" width="75" src="{{ site.url }}/img/bio-al.jpg">
+				</div>
+				<div id="biz-card-text">
+					<p>Welcome to <strong>Alastair Mucklow</strong>'s website. Browse my portfolio of <strong>web design and development</strong> projects - then <a class="special" href="http://www.strangerpixel.com/contact/">hire me</a>!</p>
+				</div>
+			</div>	
+		</header>	
+
+		<article id="page">
+			<header>
+				<h1>{{ page.title }}</h1>
+				<div class="entry-date">{{ page.date | date: "%B %e, %Y" }}</div>
+			</header>
+			<div class="entry-content">
+		    	{{ content }}
+			</div>
+		</article>
+
+		{% unless page.tags == empty %}
+		<div class="entry-meta">
+			Posted in
+			<ul class="cats">
+				{% assign categories_list = page.categories %}
+    			{% include JB/categories_list %}
+			</ul>
+			and tagged
+			<ul class="tags">
+				{% assign tags_list = page.tags %}
+    			{% include JB/tags_list %}
+			</ul>
+		</div>
+  		{% endunless %}  
+
+	</div>
+</body>
+</html>

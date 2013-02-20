@@ -4,7 +4,7 @@
 # Set this to the root of your project when deployed:
 http_path = "http://localhost:4000/"
 css_dir = "css/"
-sass_dir = "lib"
+sass_dir = "lib/"
 javascripts_dir = "js"
 images_dir = "img/"
 
