@@ -1,4 +1,3 @@
-auto: true
 url: http://localhost:4000/
 # url: http://www.strangerpixel.com/
 permalink: /:year/:month/:title
@@ -11,7 +10,7 @@ rdiscount extensions: [smart]
 # permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
+highlighter: true
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.

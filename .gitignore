@@ -34,8 +34,4 @@ nbproject
 .CVS
 .idea
 node_modules
-
-# Ignore this file too
-!.gitignore
-
 _site/
