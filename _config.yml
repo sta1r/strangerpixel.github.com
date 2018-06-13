@@ -1,4 +1,3 @@
-auto: true
 url: http://localhost:4000/
 # url: http://www.strangerpixel.com/
 permalink: /:year/:month/:title
