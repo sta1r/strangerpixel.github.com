@@ -9,7 +9,10 @@ Preview at http://localhost:4000. Commit and push to master to deploy.
 
 # Legacy blog 
 
-- To restore, rename `posts-old` to `_posts` and run `jekyll serve` to regenerate
+To restore:
+- rename `posts-old` to `_posts` and run `jekyll serve` to regenerate
+- remove the tilde from `~blog.html` to output `_site/blog/index.html`
+- edit the `exclude` array in `_config.yml` to restore tags and categories
 
 # TODO
 
