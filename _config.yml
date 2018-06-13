@@ -16,7 +16,11 @@ exclude: [
   "config.rb",
   "Gemfile",
   "Gemfile.lock",
-  "LICENSE"
+  "LICENSE",
+  "lib",
+  "posts-old",
+  "categories.html",
+  "tags.html"
 ]
 highlighter: rouge
 
