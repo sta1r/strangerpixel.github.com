@@ -1,7 +1,5 @@
 permalink: /:year/:month/:title
-markdown: rdiscount
-rdiscount extensions: [smart]
-
+markdown: kramdown
 
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
