@@ -1,6 +1,6 @@
 // strangerpixel bespoke sass
 
-body, .khaki-bg {
+.khaki-bg {
 	background-color: $lightKhaki;
 }
 
@@ -44,22 +44,19 @@ body, .khaki-bg {
 .social {
 	margin-left: 0;
 	li {
-		margin: 0 12px 0 0;
-		float: left;
+		margin: 0 20px 0 0;
+		display: inline-block;
+		background-repeat: no-repeat;
+		background-position: left center;
+	}
+	svg {
+		fill: $grayDark;
 	}
 	a {
 		display: block;
-		background: url(../img/social-sprite.png) 0 -8px no-repeat;
-		height: 32px;
-		padding-left: 40px;
-		padding-top: 6px;
+		padding-left: 32px;
+		margin-top: -26px;
 		color: $grayDark;
-	}
-	.linkedin a {
-		background-position: 0 -52px;
-	}
-	.email a {
-		background-position: 0 -93px;
 	}
 }
 
