@@ -63,12 +63,14 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rdiscount (2.2.0.2)
-    rexml (3.2.5)
+    rexml (3.3.3)
+      strscan
     rouge (3.26.0)
     safe_yaml (1.0.5)
     sass (3.4.25)
     sassc (2.4.0)
       ffi (~> 1.9)
+    strscan (3.1.0)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
@@ -76,6 +78,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   compass (~> 1.0)
